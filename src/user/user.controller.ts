@@ -1,5 +1,6 @@
 import { Body, Controller, Delete, Get, HttpCode, HttpStatus, Param, Patch, Post } from '@nestjs/common';
 import { CreateUserDto } from './dto/create-user.dto';
+import { UpdateUserDto } from './dto/update-user.dto';
 import { UserService } from './user.service';
 
 @Controller('user')
@@ -22,7 +23,7 @@ export class UserController {
     }
     @Patch(':userId')
     @HttpCode(HttpStatus.ACCEPTED)
-    updateOneUser(@Param('userId') userId, @Body() userInfo) {
+    updateOneUser(@Param('userId') userId, @Body() userInfo:UpdateUserDto) {
         return this.userService.updateOneUser(userId,userInfo);
     }
     @Delete(':userId')
