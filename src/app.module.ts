@@ -11,6 +11,8 @@ import { RoleModule } from './role/role.module';
 import { StatusController } from './status/status.controller';
 import { StatusService } from './status/status.service';
 import { StatusModule } from './status/status.module';
+import { SymptomController } from './symptom/symptom.controller';
+import { SymptomModule } from './symptom/symptom.module';
 
 
 @Module({
@@ -19,8 +21,9 @@ import { StatusModule } from './status/status.module';
     UserModule,
     RoleModule,
     StatusModule,
+    SymptomModule,
   ],
-  controllers: [AppController, UserController, RoleController, StatusController],
+  controllers: [AppController, UserController, RoleController, StatusController, SymptomController],
   providers: [AppService, UserService, RoleService, StatusService],
 })
 export class AppModule { }
