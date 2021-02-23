@@ -7,19 +7,19 @@ import { Model } from 'mongoose'
 export class SymptomService {
 
     constructor(@InjectModel(Symptom.name) private symptomModel: Model<symptomSchemaDocument>) { }
-    findAllSymtoms() {
-        return this.symptomModel.find();
+    async findAllSymtoms() {
+        return await this.symptomModel.find();
     }
-    findOneSymtom(symptomId) {
-        return this.symptomModel.findById(symptomId);
+    async findOneSymtom(symptomId) {
+        return await this.symptomModel.findById(symptomId);
     }
-    createOneSymtom(symptomInfo) {
-        return this.symptomModel.create(symptomInfo);
+    async createOneSymtom(symptomInfo) {
+        return await this.symptomModel.create(symptomInfo);
     }
-    updateOneSymtom(symptomId, symptomInfo) {
-        return this.symptomModel.findByIdAndUpdate(symptomId, symptomInfo);
+    async updateOneSymtom(symptomId, symptomInfo) {
+        return await this.symptomModel.findByIdAndUpdate(symptomId, symptomInfo);
     }
-    deleteOneSymtom(symptomId) {
-        this.symptomModel.findByIdAndDelete(symptomId);
+    async deleteOneSymtom(symptomId) {
+        return await this.symptomModel.findByIdAndDelete(symptomId);
     }
 }
