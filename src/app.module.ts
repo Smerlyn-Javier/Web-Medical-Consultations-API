@@ -13,6 +13,7 @@ import { StatusService } from './status/status.service';
 import { StatusModule } from './status/status.module';
 import { SymptomController } from './symptom/symptom.controller';
 import { SymptomModule } from './symptom/symptom.module';
+import { SymptomService } from './symptom/symptom.service';
 
 
 @Module({
@@ -24,6 +25,6 @@ import { SymptomModule } from './symptom/symptom.module';
     SymptomModule,
   ],
   controllers: [AppController, UserController, RoleController, StatusController, SymptomController],
-  providers: [AppService, UserService, RoleService, StatusService],
+  providers: [AppService, UserService, RoleService, StatusService,SymptomService],
 })
 export class AppModule { }
