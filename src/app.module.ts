@@ -17,6 +17,9 @@ import { SymptomService } from './symptom/symptom.service';
 import { PacientController } from './pacient/pacient.controller';
 import { PacientService } from './pacient/pacient.service';
 import { PacientModule } from './pacient/pacient.module';
+import { HealtInsuranceController } from './healt-insurance/healt-insurance.controller';
+import { HealtInsuranceService } from './healt-insurance/healt-insurance.service';
+import { HealtInsuranceModule } from './healt-insurance/healt-insurance.module';
 
 
 @Module({
@@ -27,8 +30,9 @@ import { PacientModule } from './pacient/pacient.module';
     StatusModule,
     SymptomModule,
     PacientModule,
+    HealtInsuranceModule,
   ],
-  controllers: [AppController, UserController, RoleController, StatusController, SymptomController, PacientController],
-  providers: [AppService, UserService, RoleService, StatusService,SymptomService, PacientService],
+  controllers: [AppController, UserController, RoleController, StatusController, SymptomController, PacientController, HealtInsuranceController],
+  providers: [AppService, UserService, RoleService, StatusService,SymptomService, PacientService, HealtInsuranceService],
 })
 export class AppModule { }
