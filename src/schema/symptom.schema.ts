@@ -10,8 +10,7 @@ export class Symptom {
     symptomName: string;
     @Prop()
     symptomDescription: string;
-    @Prop({ type: mongoose.Schema.Types.ObjectId, ref: 'Pacient' })
-    pacientId: string;
+    
     @Prop({ type: mongoose.Schema.Types.ObjectId, ref: 'Status' })
     statusId: string;
 }
