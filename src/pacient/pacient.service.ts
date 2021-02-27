@@ -1,26 +1,29 @@
 import { Injectable } from '@nestjs/common';
+import { InjectModel } from '@nestjs/mongoose';
+import { Pacient, pacientSchemaDocument } from 'src/schema/pacient.schema';
+import {Model} from 'mongoose'
 
 @Injectable()
 export class PacientService {
 
-
+constructor(@InjectModel(Pacient.name) private PacientModel:Model<pacientSchemaDocument> ){}
     findAllPacient(){
-        return ''
+        return this.PacientModel.find();
     }
 
-    findOnePacient(@Param('pacientId') pacientId){
-        return ''
+    findOnePacient(pacientId){
+        return this.PacientModel.findById(pacientId);
     }
 
     createOnePacient(pacientInfo){
-        return ''
+        return this.PacientModel.create(pacientInfo);
     }
 
     updateOnePacient( pacientId,  pacientInfo){
-        return ''
+        return this.PacientModel.findByIdAndUpdate(pacientId,pacientInfo);
     }
 
     deleteOnePacient(pacientId){
-        return ''
+        return this.PacientModel.findByIdAndDelete(pacientId);
     }
 }
