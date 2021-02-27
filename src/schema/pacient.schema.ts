@@ -12,6 +12,9 @@ export class Pacient {
     @Prop({ type: mongoose.Schema.Types.ObjectId, ref: 'HealthInsurer' })
     healthInsurerId: string;
 
+    @Prop()
+    healtInsuranceNumber: string;
+    
     @Prop({ type: mongoose.Schema.Types.ObjectId, ref: 'Symptom' })
     symptomId: string;
 
