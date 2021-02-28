@@ -20,6 +20,18 @@ import { PacientModule } from './pacient/pacient.module';
 import { HealtInsuranceController } from './healt-insurance/healt-insurance.controller';
 import { HealtInsuranceService } from './healt-insurance/healt-insurance.service';
 import { HealtInsuranceModule } from './healt-insurance/healt-insurance.module';
+import { MedicController } from './medic/medic.controller';
+import { MedicService } from './medic/medic.service';
+import { MedicModule } from './medic/medic.module';
+import { DoctorOfficeController } from './doctor-office/doctor-office.controller';
+import { DoctorOfficeService } from './doctor-office/doctor-office.service';
+import { DoctorOfficeModule } from './doctor-office/doctor-office.module';
+import { ScheduleController } from './schedule/schedule.controller';
+import { ScheduleService } from './schedule/schedule.service';
+import { ScheduleModule } from './schedule/schedule.module';
+import { SpecialtyController } from './specialty/specialty.controller';
+import { SpecialtyService } from './specialty/specialty.service';
+import { SpecialtyModule } from './specialty/specialty.module';
 
 
 @Module({
@@ -31,8 +43,12 @@ import { HealtInsuranceModule } from './healt-insurance/healt-insurance.module';
     SymptomModule,
     PacientModule,
     HealtInsuranceModule,
+    MedicModule,
+    DoctorOfficeModule,
+    ScheduleModule,
+    SpecialtyModule,
   ],
-  controllers: [AppController, UserController, RoleController, StatusController, SymptomController, PacientController, HealtInsuranceController],
-  providers: [AppService, UserService, RoleService, StatusService,SymptomService, PacientService, HealtInsuranceService],
+  controllers: [AppController, UserController, RoleController, StatusController, SymptomController, PacientController, HealtInsuranceController, MedicController, DoctorOfficeController, ScheduleController, SpecialtyController],
+  providers: [AppService, UserService, RoleService, StatusService,SymptomService, PacientService, HealtInsuranceService, MedicService, DoctorOfficeService, ScheduleService, SpecialtyService],
 })
 export class AppModule { }
