@@ -32,6 +32,9 @@ import { ScheduleModule } from './schedule/schedule.module';
 import { SpecialtyController } from './specialty/specialty.controller';
 import { SpecialtyService } from './specialty/specialty.service';
 import { SpecialtyModule } from './specialty/specialty.module';
+import { PharmacyController } from './pharmacy/pharmacy.controller';
+import { PharmacyService } from './pharmacy/pharmacy.service';
+import { PharmacyModule } from './pharmacy/pharmacy.module';
 
 
 @Module({
@@ -47,8 +50,9 @@ import { SpecialtyModule } from './specialty/specialty.module';
     DoctorOfficeModule,
     ScheduleModule,
     SpecialtyModule,
+    PharmacyModule,
   ],
-  controllers: [AppController, UserController, RoleController, StatusController, SymptomController, PacientController, HealtInsuranceController, MedicController, DoctorOfficeController, ScheduleController, SpecialtyController],
-  providers: [AppService, UserService, RoleService, StatusService,SymptomService, PacientService, HealtInsuranceService, MedicService, DoctorOfficeService, ScheduleService, SpecialtyService],
+  controllers: [AppController, UserController, RoleController, StatusController, SymptomController, PacientController, HealtInsuranceController, MedicController, DoctorOfficeController, ScheduleController, SpecialtyController, PharmacyController],
+  providers: [AppService, UserService, RoleService, StatusService,SymptomService, PacientService, HealtInsuranceService, MedicService, DoctorOfficeService, ScheduleService, SpecialtyService, PharmacyService],
 })
 export class AppModule { }
