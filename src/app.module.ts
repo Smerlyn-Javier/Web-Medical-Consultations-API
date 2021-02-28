@@ -35,6 +35,9 @@ import { SpecialtyModule } from './specialty/specialty.module';
 import { PharmacyController } from './pharmacy/pharmacy.controller';
 import { PharmacyService } from './pharmacy/pharmacy.service';
 import { PharmacyModule } from './pharmacy/pharmacy.module';
+import { AssociatedPharmacyController } from './associated-pharmacy/associated-pharmacy.controller';
+import { AssociatedPharmacyService } from './associated-pharmacy/associated-pharmacy.service';
+import { AssociatedPharmacyModule } from './associated-pharmacy/associated-pharmacy.module';
 
 
 @Module({
@@ -51,8 +54,9 @@ import { PharmacyModule } from './pharmacy/pharmacy.module';
     ScheduleModule,
     SpecialtyModule,
     PharmacyModule,
+    AssociatedPharmacyModule,
   ],
-  controllers: [AppController, UserController, RoleController, StatusController, SymptomController, PacientController, HealtInsuranceController, MedicController, DoctorOfficeController, ScheduleController, SpecialtyController, PharmacyController],
-  providers: [AppService, UserService, RoleService, StatusService,SymptomService, PacientService, HealtInsuranceService, MedicService, DoctorOfficeService, ScheduleService, SpecialtyService, PharmacyService],
+  controllers: [AppController, UserController, RoleController, StatusController, SymptomController, PacientController, HealtInsuranceController, MedicController, DoctorOfficeController, ScheduleController, SpecialtyController, PharmacyController, AssociatedPharmacyController],
+  providers: [AppService, UserService, RoleService, StatusService,SymptomService, PacientService, HealtInsuranceService, MedicService, DoctorOfficeService, ScheduleService, SpecialtyService, PharmacyService, AssociatedPharmacyService],
 })
 export class AppModule { }
