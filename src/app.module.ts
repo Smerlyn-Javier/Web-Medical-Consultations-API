@@ -55,6 +55,10 @@ import { MedicalHistoryModule } from './medical-history/medical-history.module';
 import { MedicalProcedureController } from './medical-procedure/medical-procedure.controller';
 import { MedicalProcedureService } from './medical-procedure/medical-procedure.service';
 import { MedicalProcedureModule } from './medical-procedure/medical-procedure.module';
+import { MedicalShiftController } from './medical-shift/medical-shift.controller';
+import { MedicalShiftModule } from './medical-shift/medical-shift.module';
+import { MedicalShiftService } from './medical-shift/medical-shift.service';
+
 
 
 @Module({
@@ -78,8 +82,9 @@ import { MedicalProcedureModule } from './medical-procedure/medical-procedure.mo
     CardInfoModule,
     MedicalHistoryModule,
     MedicalProcedureModule,
+    MedicalShiftModule,
   ],
-  controllers: [AppController, UserController, RoleController, StatusController, SymptomController, PacientController, HealtInsuranceController, MedicController, DoctorOfficeController, ScheduleController, SpecialtyController, PharmacyController, AssociatedPharmacyController, PriceController, ChargeMedicalConsultationController, CardInfoController, MedicalHistoryController, MedicalProcedureController],
-  providers: [AppService, UserService, RoleService, StatusService,SymptomService, PacientService, HealtInsuranceService, MedicService, DoctorOfficeService, ScheduleService, SpecialtyService, PharmacyService, AssociatedPharmacyService, PriceService, AppointmentService, ChargeMedicalConsultationService, CardInfoService, MedicalHistoryService, MedicalProcedureService],
+  controllers: [AppController, UserController, RoleController, StatusController, SymptomController, PacientController, HealtInsuranceController, MedicController, DoctorOfficeController, ScheduleController, SpecialtyController, PharmacyController, AssociatedPharmacyController, PriceController, ChargeMedicalConsultationController, CardInfoController, MedicalHistoryController, MedicalProcedureController, MedicalShiftController,MedicalShiftController],
+  providers: [AppService, UserService, RoleService, StatusService,SymptomService, PacientService, HealtInsuranceService, MedicService, DoctorOfficeService, ScheduleService, SpecialtyService, PharmacyService, AssociatedPharmacyService, PriceService, AppointmentService, ChargeMedicalConsultationService, CardInfoService, MedicalHistoryService, MedicalProcedureService,MedicalShiftService],
 })
 export class AppModule { }
