@@ -43,6 +43,9 @@ import { PriceService } from './price/price.service';
 import { PriceModule } from './price/price.module';
 import { AppointmentService } from './appointment/appointment.service';
 import { AppointmentModule } from './appointment/appointment.module';
+import { ChargeMedicalConsultationController } from './charge-medical-consultation/charge-medical-consultation.controller';
+import { ChargeMedicalConsultationService } from './charge-medical-consultation/charge-medical-consultation.service';
+import { ChargeMedicalConsultationModule } from './charge-medical-consultation/charge-medical-consultation.module';
 
 
 @Module({
@@ -62,8 +65,9 @@ import { AppointmentModule } from './appointment/appointment.module';
     AssociatedPharmacyModule,
     PriceModule,
     AppointmentModule,
+    ChargeMedicalConsultationModule,
   ],
-  controllers: [AppController, UserController, RoleController, StatusController, SymptomController, PacientController, HealtInsuranceController, MedicController, DoctorOfficeController, ScheduleController, SpecialtyController, PharmacyController, AssociatedPharmacyController, PriceController],
-  providers: [AppService, UserService, RoleService, StatusService,SymptomService, PacientService, HealtInsuranceService, MedicService, DoctorOfficeService, ScheduleService, SpecialtyService, PharmacyService, AssociatedPharmacyService, PriceService, AppointmentService],
+  controllers: [AppController, UserController, RoleController, StatusController, SymptomController, PacientController, HealtInsuranceController, MedicController, DoctorOfficeController, ScheduleController, SpecialtyController, PharmacyController, AssociatedPharmacyController, PriceController, ChargeMedicalConsultationController],
+  providers: [AppService, UserService, RoleService, StatusService,SymptomService, PacientService, HealtInsuranceService, MedicService, DoctorOfficeService, ScheduleService, SpecialtyService, PharmacyService, AssociatedPharmacyService, PriceService, AppointmentService, ChargeMedicalConsultationService],
 })
 export class AppModule { }
