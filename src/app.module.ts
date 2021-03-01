@@ -46,6 +46,9 @@ import { AppointmentModule } from './appointment/appointment.module';
 import { ChargeMedicalConsultationController } from './charge-medical-consultation/charge-medical-consultation.controller';
 import { ChargeMedicalConsultationService } from './charge-medical-consultation/charge-medical-consultation.service';
 import { ChargeMedicalConsultationModule } from './charge-medical-consultation/charge-medical-consultation.module';
+import { CardInfoController } from './card-info/card-info.controller';
+import { CardInfoService } from './card-info/card-info.service';
+import { CardInfoModule } from './card-info/card-info.module';
 
 
 @Module({
@@ -66,8 +69,9 @@ import { ChargeMedicalConsultationModule } from './charge-medical-consultation/c
     PriceModule,
     AppointmentModule,
     ChargeMedicalConsultationModule,
+    CardInfoModule,
   ],
-  controllers: [AppController, UserController, RoleController, StatusController, SymptomController, PacientController, HealtInsuranceController, MedicController, DoctorOfficeController, ScheduleController, SpecialtyController, PharmacyController, AssociatedPharmacyController, PriceController, ChargeMedicalConsultationController],
-  providers: [AppService, UserService, RoleService, StatusService,SymptomService, PacientService, HealtInsuranceService, MedicService, DoctorOfficeService, ScheduleService, SpecialtyService, PharmacyService, AssociatedPharmacyService, PriceService, AppointmentService, ChargeMedicalConsultationService],
+  controllers: [AppController, UserController, RoleController, StatusController, SymptomController, PacientController, HealtInsuranceController, MedicController, DoctorOfficeController, ScheduleController, SpecialtyController, PharmacyController, AssociatedPharmacyController, PriceController, ChargeMedicalConsultationController, CardInfoController],
+  providers: [AppService, UserService, RoleService, StatusService,SymptomService, PacientService, HealtInsuranceService, MedicService, DoctorOfficeService, ScheduleService, SpecialtyService, PharmacyService, AssociatedPharmacyService, PriceService, AppointmentService, ChargeMedicalConsultationService, CardInfoService],
 })
 export class AppModule { }
