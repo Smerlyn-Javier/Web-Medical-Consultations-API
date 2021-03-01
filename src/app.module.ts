@@ -61,6 +61,9 @@ import { MedicalShiftService } from './medical-shift/medical-shift.service';
 import { MedicineController } from './medicine/medicine.controller';
 import { MedicineService } from './medicine/medicine.service';
 import { MedicineModule } from './medicine/medicine.module';
+import { MedicineComponentController } from './medicine-component/medicine-component.controller';
+import { MedicineComponentService } from './medicine-component/medicine-component.service';
+import { MedicineComponentModule } from './medicine-component/medicine-component.module';
 
 
 
@@ -87,8 +90,9 @@ import { MedicineModule } from './medicine/medicine.module';
     MedicalProcedureModule,
     MedicalShiftModule,
     MedicineModule,
+    MedicineComponentModule,
   ],
-  controllers: [AppController, UserController, RoleController, StatusController, SymptomController, PacientController, HealtInsuranceController, MedicController, DoctorOfficeController, ScheduleController, SpecialtyController, PharmacyController, AssociatedPharmacyController, PriceController, ChargeMedicalConsultationController, CardInfoController, MedicalHistoryController, MedicalProcedureController, MedicalShiftController,MedicalShiftController, MedicineController],
-  providers: [AppService, UserService, RoleService, StatusService,SymptomService, PacientService, HealtInsuranceService, MedicService, DoctorOfficeService, ScheduleService, SpecialtyService, PharmacyService, AssociatedPharmacyService, PriceService, AppointmentService, ChargeMedicalConsultationService, CardInfoService, MedicalHistoryService, MedicalProcedureService,MedicalShiftService, MedicineService],
+  controllers: [AppController, UserController, RoleController, StatusController, SymptomController, PacientController, HealtInsuranceController, MedicController, DoctorOfficeController, ScheduleController, SpecialtyController, PharmacyController, AssociatedPharmacyController, PriceController, ChargeMedicalConsultationController, CardInfoController, MedicalHistoryController, MedicalProcedureController, MedicalShiftController,MedicalShiftController, MedicineController, MedicineComponentController],
+  providers: [AppService, UserService, RoleService, StatusService,SymptomService, PacientService, HealtInsuranceService, MedicService, DoctorOfficeService, ScheduleService, SpecialtyService, PharmacyService, AssociatedPharmacyService, PriceService, AppointmentService, ChargeMedicalConsultationService, CardInfoService, MedicalHistoryService, MedicalProcedureService,MedicalShiftService, MedicineService, MedicineComponentService],
 })
 export class AppModule { }
