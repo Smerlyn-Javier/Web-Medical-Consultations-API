@@ -67,6 +67,9 @@ import { MedicineComponentModule } from './medicine-component/medicine-component
 import { PaymentMethodController } from './payment-method/payment-method.controller';
 import { PaymentMethodService } from './payment-method/payment-method.service';
 import { PaymentMethodModule } from './payment-method/payment-method.module';
+import { PrescriptionController } from './prescription/prescription.controller';
+import { PrescriptionService } from './prescription/prescription.service';
+import { PrescriptionModule } from './prescription/prescription.module';
 
 
 
@@ -95,8 +98,9 @@ import { PaymentMethodModule } from './payment-method/payment-method.module';
     MedicineModule,
     MedicineComponentModule,
     PaymentMethodModule,
+    PrescriptionModule,
   ],
-  controllers: [AppController, UserController, RoleController, StatusController, SymptomController, PacientController, HealtInsuranceController, MedicController, DoctorOfficeController, ScheduleController, SpecialtyController, PharmacyController, AssociatedPharmacyController, PriceController, ChargeMedicalConsultationController, CardInfoController, MedicalHistoryController, MedicalProcedureController, MedicalShiftController,MedicalShiftController, MedicineController, MedicineComponentController, PaymentMethodController],
-  providers: [AppService, UserService, RoleService, StatusService,SymptomService, PacientService, HealtInsuranceService, MedicService, DoctorOfficeService, ScheduleService, SpecialtyService, PharmacyService, AssociatedPharmacyService, PriceService, AppointmentService, ChargeMedicalConsultationService, CardInfoService, MedicalHistoryService, MedicalProcedureService,MedicalShiftService, MedicineService, MedicineComponentService, PaymentMethodService],
+  controllers: [AppController, UserController, RoleController, StatusController, SymptomController, PacientController, HealtInsuranceController, MedicController, DoctorOfficeController, ScheduleController, SpecialtyController, PharmacyController, AssociatedPharmacyController, PriceController, ChargeMedicalConsultationController, CardInfoController, MedicalHistoryController, MedicalProcedureController, MedicalShiftController,MedicalShiftController, MedicineController, MedicineComponentController, PaymentMethodController, PrescriptionController],
+  providers: [AppService, UserService, RoleService, StatusService,SymptomService, PacientService, HealtInsuranceService, MedicService, DoctorOfficeService, ScheduleService, SpecialtyService, PharmacyService, AssociatedPharmacyService, PriceService, AppointmentService, ChargeMedicalConsultationService, CardInfoService, MedicalHistoryService, MedicalProcedureService,MedicalShiftService, MedicineService, MedicineComponentService, PaymentMethodService,  PrescriptionService],
 })
 export class AppModule { }
