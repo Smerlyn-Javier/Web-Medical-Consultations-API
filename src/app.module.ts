@@ -52,6 +52,9 @@ import { CardInfoModule } from './card-info/card-info.module';
 import { MedicalHistoryController } from './medical-history/medical-history.controller';
 import { MedicalHistoryService } from './medical-history/medical-history.service';
 import { MedicalHistoryModule } from './medical-history/medical-history.module';
+import { MedicalProcedureController } from './medical-procedure/medical-procedure.controller';
+import { MedicalProcedureService } from './medical-procedure/medical-procedure.service';
+import { MedicalProcedureModule } from './medical-procedure/medical-procedure.module';
 
 
 @Module({
@@ -74,8 +77,9 @@ import { MedicalHistoryModule } from './medical-history/medical-history.module';
     ChargeMedicalConsultationModule,
     CardInfoModule,
     MedicalHistoryModule,
+    MedicalProcedureModule,
   ],
-  controllers: [AppController, UserController, RoleController, StatusController, SymptomController, PacientController, HealtInsuranceController, MedicController, DoctorOfficeController, ScheduleController, SpecialtyController, PharmacyController, AssociatedPharmacyController, PriceController, ChargeMedicalConsultationController, CardInfoController, MedicalHistoryController],
-  providers: [AppService, UserService, RoleService, StatusService,SymptomService, PacientService, HealtInsuranceService, MedicService, DoctorOfficeService, ScheduleService, SpecialtyService, PharmacyService, AssociatedPharmacyService, PriceService, AppointmentService, ChargeMedicalConsultationService, CardInfoService, MedicalHistoryService],
+  controllers: [AppController, UserController, RoleController, StatusController, SymptomController, PacientController, HealtInsuranceController, MedicController, DoctorOfficeController, ScheduleController, SpecialtyController, PharmacyController, AssociatedPharmacyController, PriceController, ChargeMedicalConsultationController, CardInfoController, MedicalHistoryController, MedicalProcedureController],
+  providers: [AppService, UserService, RoleService, StatusService,SymptomService, PacientService, HealtInsuranceService, MedicService, DoctorOfficeService, ScheduleService, SpecialtyService, PharmacyService, AssociatedPharmacyService, PriceService, AppointmentService, ChargeMedicalConsultationService, CardInfoService, MedicalHistoryService, MedicalProcedureService],
 })
 export class AppModule { }
