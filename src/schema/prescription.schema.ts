@@ -3,10 +3,10 @@ import { Document } from 'mongoose'
 import * as mongoose from 'mongoose';
 
 
-export type presciptionSchemaDocument = Presciption & Document;
+export type prescriptionSchemaDocument = Prescription & Document;
 
 @Schema()
-export class Presciption {
+export class Prescription {
 
     @Prop()
     pacientId:string;
@@ -27,4 +27,4 @@ export class Presciption {
      statusId: string;
 }
 
-export const PresciptionSchema = SchemaFactory.createForClass(Presciption);
+export const PrescriptionSchema = SchemaFactory.createForClass(Prescription);
